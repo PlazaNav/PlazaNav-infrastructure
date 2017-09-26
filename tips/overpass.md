@@ -5,6 +5,9 @@
 [overpass-turbo](https://overpass-turbo.eu/)
 
 ` Einstellung - Allgemeines - Server: //overpass.osm.ch/api/ `
+- Wiki: <https://wiki.openstreetmap.org/wiki/Overpass_API>
+- Haltestellen sind mit `public_transport = stop_position` getagged
+  - Namens-Schemas sind im [Wiki](https://wiki.openstreetmap.org/wiki/Public_transport)
 
 ### Test-Request
 
