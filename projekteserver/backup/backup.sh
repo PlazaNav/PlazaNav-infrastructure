@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -exo
 
 SERVICE=jira.service
 DATE=$(date +"%Y_%m_%d-%H-%M-%S")
@@ -32,6 +32,8 @@ tar cvzf $DESTFILE -C $TMP_DEST .
 # upload to S3
 aws s3api put-object --bucket $S3BUCKET --key $DESTFILENAME --body $DESTFILE
 
+# clean up
+rm -rf $TMP_DEST
 
 echo "Starting service $SERVICE"
 systemctl start $SERVICE
