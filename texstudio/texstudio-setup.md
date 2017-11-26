@@ -12,7 +12,7 @@ pip install pygments
 ## Settings
 - Alle Optionen unter `Options -> Configure TeXStudio`
 - `Build` -> `Default Compiler: XeLaTeX`
-- `Commands` -> Unter `XeLateX` den Parameter `-shell-escape` hinzufügen (wird für Syntax-Highlighting benötigt)
+- `Commands` -> Unter `XeLateX` den Parameter `-shell-escape` hinzufügen (wird für Syntax-Highlighting benötigt) und ganz am Schluss `|makeglossaries %` anhängen (wird für das Glossar benötigt)
 - `Editor` -> Identation Mode: `Keep Identation`
 - `Language Checking` -> Default Language: `de_CH`
 - Falls nicht vorhanden, manuell herunterladen: <https://extensions.libreoffice.org/extensions/german-de-ch-frami-dictionaries>
